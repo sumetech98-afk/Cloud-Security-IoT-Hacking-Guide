@@ -1,0 +1,808 @@
+<!-- ===== CLOUD SECURITY & IOT HACKING GUIDE - CYBERSUME FULL SCREEN BLACK EDITION ===== -->
+<!-- Isko Blogger Post Editor mein HTML mode mein paste karein -->
+
+<style>
+    /* ===== FULL SCREEN WRAPPER ===== */
+    .cyber-post-wrapper {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 30px 40px 50px !important;
+        background: #000000 !important;
+        color: #ffffff;
+        border-radius: 0 !important;
+        box-sizing: border-box;
+        min-height: 100vh;
+    }
+    
+    @media (max-width: 1200px) {
+        .cyber-post-wrapper { padding: 25px 35px 45px !important; }
+    }
+    @media (max-width: 992px) {
+        .cyber-post-wrapper { padding: 22px 30px 40px !important; }
+    }
+    @media (max-width: 768px) {
+        .cyber-post-wrapper { padding: 18px 22px 35px !important; }
+    }
+    @media (max-width: 600px) {
+        .cyber-post-wrapper { padding: 15px 18px 30px !important; }
+    }
+    @media (max-width: 480px) {
+        .cyber-post-wrapper { padding: 12px 14px 25px !important; }
+    }
+    
+    .cyber-content {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    
+    /* ===== POST HEADER ===== */
+    .post-header-cyber {
+        margin-bottom: 35px;
+        padding-bottom: 25px;
+        border-bottom: 2px solid rgba(0, 255, 136, 0.1);
+        text-align: center;
+    }
+    
+    .post-badge {
+        display: inline-block;
+        padding: 6px 26px;
+        background: rgba(0, 255, 136, 0.08);
+        border: 1px solid #00d9ff;
+        border-radius: 50px;
+        color: #00d9ff;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+    }
+    
+    .post-title-cyber {
+        font-size: 38px;
+        font-weight: 900;
+        line-height: 1.15;
+        color: #ffffff !important;
+        margin: 12px 0 18px;
+        letter-spacing: -0.5px;
+        text-align: center;
+    }
+    
+    .post-title-cyber strong {
+        color: #00d9ff;
+    }
+    
+    .post-description {
+        color: #b0b8c8;
+        font-size: 17px;
+        line-height: 1.8;
+        max-width: 700px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    @media (max-width: 992px) {
+        .post-title-cyber { font-size: 30px; }
+    }
+    @media (max-width: 768px) {
+        .post-title-cyber { font-size: 24px; }
+        .post-description { font-size: 15px; }
+    }
+    @media (max-width: 480px) {
+        .post-title-cyber { font-size: 20px; }
+    }
+    
+    /* ===== SECTION HEADERS ===== */
+    .section-header {
+        color: #00d9ff;
+        font-size: 28px;
+        font-weight: 800;
+        margin-top: 45px;
+        margin-bottom: 20px;
+        padding-bottom: 12px;
+        border-bottom: 2px solid rgba(0, 217, 255, 0.15);
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+    .section-header .icon { font-size: 30px; }
+    
+    @media (max-width: 768px) {
+        .section-header { font-size: 24px; }
+    }
+    @media (max-width: 480px) {
+        .section-header { font-size: 20px; }
+    }
+    
+    /* ===== HEADINGS ===== */
+    .cyber-post-wrapper h2 {
+        color: #ffffff !important;
+        font-size: 26px;
+        font-weight: 800;
+        margin-top: 35px;
+        margin-bottom: 14px;
+        border-left: 5px solid #00d9ff;
+        padding-left: 18px;
+        line-height: 1.3;
+    }
+    
+    .cyber-post-wrapper h3 {
+        color: #00ff88 !important;
+        font-size: 20px;
+        font-weight: 700;
+        margin: 25px 0 12px;
+    }
+    
+    .cyber-post-wrapper h4 {
+        color: #ffcc00 !important;
+        font-size: 17px;
+        font-weight: 700;
+        margin: 20px 0 10px;
+    }
+    
+    @media (max-width: 768px) {
+        .cyber-post-wrapper h2 { font-size: 22px; padding-left: 14px; }
+        .cyber-post-wrapper h3 { font-size: 18px; }
+        .cyber-post-wrapper h4 { font-size: 15px; }
+    }
+    @media (max-width: 480px) {
+        .cyber-post-wrapper h2 { font-size: 19px; padding-left: 12px; margin-top: 28px; }
+        .cyber-post-wrapper h3 { font-size: 16px; }
+        .cyber-post-wrapper h4 { font-size: 14px; }
+    }
+    
+    /* ===== PARAGRAPHS ===== */
+    .cyber-post-wrapper p {
+        color: #b0b8c8 !important;
+        font-size: 17px;
+        line-height: 1.9;
+        margin: 14px 0 18px;
+    }
+    .cyber-post-wrapper p strong { color: #00d9ff; }
+    @media (max-width: 768px) { .cyber-post-wrapper p { font-size: 16px; line-height: 1.8; } }
+    @media (max-width: 480px) { .cyber-post-wrapper p { font-size: 15px; line-height: 1.7; margin: 12px 0 14px; } }
+    
+    /* ===== LISTS ===== */
+    .cyber-post-wrapper ul, .cyber-post-wrapper ol {
+        color: #b0b8c8 !important;
+        font-size: 16px;
+        line-height: 2.2;
+        padding-left: 0;
+        margin: 12px 0 18px;
+        list-style: none;
+    }
+    .cyber-post-wrapper ul li, .cyber-post-wrapper ol li {
+        color: #b0b8c8 !important;
+        margin-bottom: 3px;
+        padding-left: 26px;
+        position: relative;
+    }
+    .cyber-post-wrapper ul li::before {
+        content: "▸";
+        color: #00d9ff;
+        position: absolute;
+        left: 0;
+        font-weight: 700;
+        font-size: 16px;
+    }
+    .cyber-post-wrapper ol {
+        counter-reset: item;
+    }
+    .cyber-post-wrapper ol li {
+        counter-increment: item;
+        padding-left: 32px;
+    }
+    .cyber-post-wrapper ol li::before {
+        content: counter(item) ".";
+        color: #00d9ff;
+        position: absolute;
+        left: 0;
+        font-weight: 700;
+        font-size: 15px;
+    }
+    @media (max-width: 480px) {
+        .cyber-post-wrapper ul, .cyber-post-wrapper ol { font-size: 15px; line-height: 2; }
+        .cyber-post-wrapper ul li { padding-left: 22px; }
+        .cyber-post-wrapper ol li { padding-left: 28px; }
+    }
+    
+    /* ===== CODE BLOCKS ===== */
+    .code-block {
+        margin: 12px 0 20px;
+        border-radius: 10px;
+        overflow: hidden;
+        background: #0a0a0a;
+        border: 1px solid rgba(0, 255, 136, 0.06);
+    }
+    .code-header {
+        background: #0d0d0d;
+        padding: 8px 18px;
+        border-bottom: 1px solid rgba(0, 255, 136, 0.05);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+    .code-header span:first-child {
+        color: #00d9ff;
+        font-size: 13px;
+        font-weight: 600;
+    }
+    .code-header span:last-child {
+        color: #6a7290;
+        font-size: 11px;
+    }
+    .code-block pre {
+        background: #000000;
+        padding: 18px 22px;
+        border-radius: 0;
+        overflow-x: auto;
+        margin: 0;
+        border: none;
+    }
+    .code-block pre code {
+        color: #b0b8c8;
+        font-family: 'Courier New', monospace;
+        font-size: 14px;
+        line-height: 1.8;
+        background: transparent;
+        white-space: pre-wrap;
+        word-break: break-all;
+    }
+    .code-block pre code .cmd { color: #00ff88; }
+    .code-block pre code .flag { color: #ffcc00; }
+    .code-block pre code .target { color: #00d9ff; }
+    .code-block pre code .comment { color: #6a7290; font-style: italic; }
+    .code-block pre code .var { color: #ff6b6b; }
+    .code-block pre code .string { color: #00d9ff; }
+    @media (max-width: 480px) {
+        .code-block pre { padding: 14px 14px; }
+        .code-block pre code { font-size: 12px; line-height: 1.7; }
+        .code-header { padding: 6px 14px; }
+        .code-header span:first-child { font-size: 12px; }
+    }
+    
+    /* ===== TABLE ===== */
+    .cyber-post-wrapper table {
+        width: 100%;
+        border-collapse: collapse;
+        background: #0a0a0a;
+        border-radius: 12px;
+        overflow: hidden;
+        border: 1px solid rgba(0, 255, 136, 0.06);
+        margin: 15px 0 22px;
+        font-size: 14px;
+    }
+    .cyber-post-wrapper table thead tr { background: #00d9ff; }
+    .cyber-post-wrapper table thead tr th {
+        padding: 12px 18px;
+        text-align: left;
+        font-weight: 700;
+        font-size: 14px;
+        color: #000000;
+    }
+    .cyber-post-wrapper table tbody tr { border-bottom: 1px solid rgba(0, 255, 136, 0.03); }
+    .cyber-post-wrapper table tbody tr:last-child { border-bottom: none; }
+    .cyber-post-wrapper table tbody tr td {
+        padding: 10px 18px;
+        color: #b0b8c8;
+        font-size: 14px;
+    }
+    @media (max-width: 768px) {
+        .cyber-post-wrapper table { font-size: 13px; }
+        .cyber-post-wrapper table thead tr th { padding: 8px 12px; font-size: 12px; }
+        .cyber-post-wrapper table tbody tr td { padding: 8px 12px; font-size: 12px; }
+    }
+    @media (max-width: 480px) {
+        .cyber-post-wrapper table { font-size: 12px; }
+        .cyber-post-wrapper table thead tr th { padding: 6px 10px; font-size: 11px; }
+        .cyber-post-wrapper table tbody tr td { padding: 6px 10px; font-size: 11px; }
+    }
+    
+    /* ===== FEATURED BOX ===== */
+    .featured-box {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 25px;
+        background: #0a0a0a;
+        border: 1px solid rgba(0, 255, 136, 0.08);
+        border-radius: 14px;
+        padding: 22px 28px;
+        margin: 20px 0 30px;
+        justify-content: center;
+    }
+    .featured-box .featured-image img {
+        max-width: 160px;
+        height: auto;
+        border-radius: 12px;
+        border: 2px solid #00d9ff;
+        transition: 0.3s;
+    }
+    .featured-box .featured-image img:hover {
+        transform: scale(1.03);
+        box-shadow: 0 0 30px rgba(0, 217, 255, 0.15);
+    }
+    .featured-box .featured-cta { flex: 1; text-align: center; }
+    .featured-box .featured-cta p { color: #b0b8c8 !important; margin: 5px 0 10px !important; font-size: 15px; }
+    .featured-box .featured-cta .btn {
+        display: inline-block;
+        padding: 10px 30px;
+        border-radius: 8px;
+        background: linear-gradient(135deg, #00d9ff, #0099cc);
+        color: #000000;
+        font-weight: 700;
+        font-size: 14px;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    .featured-box .featured-cta .btn:hover {
+        transform: scale(1.04);
+        box-shadow: 0 0 30px rgba(0, 217, 255, 0.2);
+    }
+    .featured-box .price-tag {
+        display: inline-block;
+        padding: 3px 16px;
+        border-radius: 50px;
+        background: rgba(255, 204, 0, 0.1);
+        border: 1px solid #ffcc00;
+        color: #ffcc00;
+        font-size: 13px;
+        font-weight: 700;
+        margin-top: 5px;
+    }
+    @media (max-width: 600px) {
+        .featured-box { flex-direction: column; text-align: center; padding: 18px; }
+        .featured-box .featured-image img { max-width: 140px; }
+        .featured-box .featured-cta .btn { width: 100%; }
+    }
+    
+    /* ===== TIP BOX ===== */
+    .tip-box {
+        background: rgba(0, 217, 255, 0.03);
+        border-left: 4px solid #00d9ff;
+        padding: 16px 22px;
+        margin: 16px 0 22px;
+        border-radius: 0 10px 10px 0;
+    }
+    .tip-box p { color: #00d9ff !important; font-size: 15px; margin: 0 !important; }
+    @media (max-width: 480px) {
+        .tip-box { padding: 14px 16px; }
+        .tip-box p { font-size: 13.5px; }
+    }
+    
+    /* ===== BEST PRACTICES BOX ===== */
+    .practice-box {
+        background: rgba(0, 255, 136, 0.03);
+        border: 1px solid rgba(0, 255, 136, 0.08);
+        border-radius: 12px;
+        padding: 18px 24px;
+        margin: 16px 0 22px;
+    }
+    .practice-box p {
+        color: #b0b8c8 !important;
+        font-size: 15px;
+        margin: 4px 0 !important;
+    }
+    .practice-box .check {
+        color: #00ff88;
+        font-weight: 700;
+    }
+    @media (max-width: 480px) {
+        .practice-box { padding: 14px 16px; }
+        .practice-box p { font-size: 14px; }
+    }
+    
+    /* ===== HORIZONTAL RULE ===== */
+    .cyber-post-wrapper hr {
+        border: none;
+        border-top: 1px solid rgba(0, 255, 136, 0.06);
+        margin: 30px 0 32px;
+        background: transparent;
+        height: 1px;
+    }
+    
+    /* ===== SHARE SECTION ===== */
+    .share-section {
+        margin-top: 50px;
+        padding-top: 30px;
+        border-top: 1px solid rgba(0, 255, 136, 0.08);
+    }
+    .share-section p {
+        color: #6a7290 !important;
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 16px !important;
+    }
+    .share-buttons {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .share-buttons a {
+        padding: 12px 28px;
+        border: 1px solid rgba(0, 255, 136, 0.12);
+        border-radius: 10px;
+        color: #b0b8c8 !important;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 500;
+        transition: 0.3s;
+        background: transparent;
+    }
+    .share-buttons a:hover {
+        border-color: #00d9ff;
+        color: #00d9ff !important;
+        background: rgba(0, 217, 255, 0.04);
+        transform: translateY(-2px);
+    }
+    @media (max-width: 480px) {
+        .share-buttons a { padding: 10px 18px; font-size: 13px; }
+        .share-section { margin-top: 35px; padding-top: 22px; }
+    }
+    
+    /* ===== BLOGGER OVERRIDES ===== */
+    .blog-posts { max-width: 100% !important; padding: 0 !important; }
+    .post-body { padding: 0 !important; background: #000000 !important; }
+    .post-body-content { background: #000000 !important; padding: 0 !important; }
+    .post-outer { background: #000000 !important; padding: 0 !important; margin: 0 !important; border: none !important; box-shadow: none !important; }
+    .post { background: #000000 !important; padding: 0 !important; margin: 0 !important; border: none !important; box-shadow: none !important; }
+    
+    /* ===== LINK STYLES ===== */
+    .cyber-post-wrapper a { color: #00d9ff; text-decoration: none; transition: 0.3s; }
+    .cyber-post-wrapper a:hover { color: #00ff88; text-decoration: underline; }
+    .text-center { text-align: center; }
+</style>
+
+<!-- ===== MAIN CONTENT ===== -->
+<div class="cyber-post-wrapper">
+
+    <div class="cyber-content">
+
+        <!-- ===== POST HEADER ===== -->
+        <div class="post-header-cyber">
+            <div class="post-badge">☁️ Cloud & IoT Security</div>
+            <h1 class="post-title-cyber">Cloud Security &amp; <strong>IoT Hacking</strong> Guide</h1>
+            <p class="post-description">
+                Complete guide to cloud security, IoT hacking, attack vectors, tools, and defense strategies.
+            </p>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- PART 1: CLOUD SECURITY -->
+        <!-- ============================================================ -->
+        <div class="section-header">
+            <span class="icon">☁️</span> Part 1: Cloud Security
+        </div>
+
+        <h2>1. Introduction to Cloud Security</h2>
+
+        <p>
+            Cloud security is the part of <strong>cybersecurity career</strong>. Cloud security focuses on protecting data, applications, and infrastructure in cloud environments (AWS, Azure, GCP). Major risks include:
+        </p>
+        <ul>
+            <li><strong>Misconfigurations</strong> — Exposed S3 buckets</li>
+            <li><strong>Insecure APIs</strong></li>
+            <li><strong>Account hijacking</strong></li>
+            <li><strong>Insider threats</strong></li>
+        </ul>
+
+        <div class="featured-box">
+            <div class="featured-image">
+                <a href="https://www.amazon.com/dp/B0GTYGBHF5" target="_blank">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZyoP_fnwLHN4AG6rY-UyD-atAV0LM2iG28sJIA6SkO0rYbMotKp7RME1fsqDDZu25S6GMbpbFqo64r2RnklmEvuLHb3o6X2soCsbRUGVXRWZNk_9OZ028nwM7w6h4BnHbPKWPai0_90Nza7gqP-RAwO3eS6UVLPgHOh9F7pmslme9cLdlayDli7fKSe0N/s320/image.png" alt="Cloud Security Book"/>
+                </a>
+               
+            </div>
+            <div class="featured-cta">
+                <p>📚 <strong style="color:#00d9ff;">Get Your Copy Today!</strong></p>
+                <a class="btn" href="https://www.amazon.com/dp/B0GTYGBHF5" target="_blank">🛒 Buy Now on Amazon</a>
+            </div>
+        </div>
+
+        <hr/>
+
+        <h2>2. Cloud Attack Vectors</h2>
+
+        <h3>A. Storage Bucket Exploitation</h3>
+
+        <p><strong>AWS S3 Bucket Enumeration:</strong></p>
+        <div class="code-block">
+            <div class="code-header">
+                <span>☁️ AWS CLI</span>
+                <span>S3 Enumeration</span>
+            </div>
+            <pre><code><span class="cmd">aws s3 ls s3://bucket-name --no-sign-request</span></code></pre>
+        </div>
+
+        <p><strong>Tools:</strong> S3Scanner, BucketStream</p>
+
+        <h3>B. Privilege Escalation</h3>
+
+        <p><strong>AWS IAM Misconfigurations:</strong></p>
+        <div class="code-block">
+            <div class="code-header">
+                <span>☁️ AWS CLI</span>
+                <span>IAM Enumeration</span>
+            </div>
+            <pre><code><span class="cmd">aws iam list-users</span>
+<span class="cmd">aws iam list-roles</span></code></pre>
+        </div>
+
+        <p><strong>Tools:</strong> Pacu, CloudBrute</p>
+
+        <h3>C. Serverless (Lambda) Attacks</h3>
+        <ul>
+            <li>Injection in Lambda functions</li>
+        </ul>
+        <p><strong>Tools:</strong> Lambda-Proxy, AWS CLI</p>
+
+        <h3>D. Container &amp; Kubernetes Hacking</h3>
+
+        <p><strong>Escaping Docker containers:</strong></p>
+        <div class="code-block">
+            <div class="code-header">
+                <span>🐳 Docker</span>
+                <span>Container Escape</span>
+            </div>
+            <pre><code><span class="cmd">docker run --privileged -it alpine</span></code></pre>
+        </div>
+
+        <p><strong>Tools:</strong> kube-hunter, Peirates</p>
+
+        <hr/>
+
+        <h2>3. Cloud Security Tools</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Tool</th>
+                    <th>Purpose</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ScoutSuite</td>
+                    <td>Multi-cloud auditing</td>
+                </tr>
+                <tr>
+                    <td>CloudSploit</td>
+                    <td>AWS/GCP/Azure security checks</td>
+                </tr>
+                <tr>
+                    <td>Terrascan</td>
+                    <td>IaC (Terraform) security scanner</td>
+                </tr>
+                <tr>
+                    <td>Kubescape</td>
+                    <td>Kubernetes security</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr/>
+
+        <!-- ============================================================ -->
+        <!-- PART 2: IOT HACKING -->
+        <!-- ============================================================ -->
+        <div class="section-header">
+            <span class="icon">📡</span> Part 2: IoT Hacking
+        </div>
+
+        <h2>1. IoT Attack Surface</h2>
+
+        <ul>
+            <li><strong>Firmware vulnerabilities</strong></li>
+            <li><strong>Insecure APIs</strong> — MQTT, CoAP</li>
+            <li><strong>Default credentials</strong> — admin:admin</li>
+            <li><strong>Hardware attacks</strong> — UART, JTAG</li>
+        </ul>
+
+        <hr/>
+
+        <h2>2. IoT Hacking Methodology</h2>
+
+        <h3>A. Reconnaissance</h3>
+
+        <p><strong>Shodan/FoFa Search:</strong></p>
+        <div class="code-block">
+            <div class="code-header">
+                <span>🔍 Shodan</span>
+                <span>IoT Search</span>
+            </div>
+            <pre><code><span class="cmd">shodan search</span> <span class="string">"default password"</span></code></pre>
+        </div>
+
+        <p><strong>Firmware Extraction:</strong></p>
+        <div class="code-block">
+            <div class="code-header">
+                <span>🔧 Binwalk</span>
+                <span>Firmware Analysis</span>
+            </div>
+            <pre><code><span class="cmd">binwalk -e firmware.bin</span></code></pre>
+        </div>
+
+        <h3>B. Exploitation</h3>
+
+        <p><strong>Brute-forcing Telnet/SSH:</strong></p>
+        <div class="code-block">
+            <div class="code-header">
+                <span>🔑 Hydra</span>
+                <span>Brute Force</span>
+            </div>
+            <pre><code><span class="cmd">hydra -l admin -P rockyou.txt 192.168.1.1 telnet</span></code></pre>
+        </div>
+
+        <p><strong>MQTT Exploitation:</strong></p>
+        <div class="code-block">
+            <div class="code-header">
+                <span>📡 MQTT</span>
+                <span>Subscribe</span>
+            </div>
+            <pre><code><span class="cmd">mosquitto_sub -t "#" -h 192.168.1.100</span></code></pre>
+        </div>
+
+        <h3>C. Hardware Hacking</h3>
+
+        <p><strong>UART Pin Extraction:</strong></p>
+        <ul>
+            <li>Identify TX/RX/GND pins</li>
+            <li>Connect via USB-to-TTL adapter</li>
+        </ul>
+
+        <p><strong>JTAG Debugging:</strong></p>
+        <ul>
+            <li>Use OpenOCD, UrJTAG</li>
+        </ul>
+
+        <hr/>
+
+        <h2>3. IoT Security Tools</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Tool</th>
+                    <th>Purpose</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Firmware Analysis Toolkit (FAT)</td>
+                    <td>Automated firmware analysis</td>
+                </tr>
+                <tr>
+                    <td>RouterSploit</td>
+                    <td>IoT exploitation framework</td>
+                </tr>
+                <tr>
+                    <td>Wireshark</td>
+                    <td>Network protocol analysis</td>
+                </tr>
+                <tr>
+                    <td>JTAGulator</td>
+                    <td>Hardware debugging</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr/>
+
+        <!-- ============================================================ -->
+        <!-- PART 3: DEFENSE STRATEGIES -->
+        <!-- ============================================================ -->
+        <div class="section-header">
+            <span class="icon">🛡️</span> Part 3: Defense Strategies
+        </div>
+
+        <h2>Cloud Security Best Practices</h2>
+
+        <div class="practice-box">
+            <p><span class="check">✔</span> Enable <strong>MFA</strong> for all cloud accounts</p>
+            <p><span class="check">✔</span> Use <strong>IAM roles</strong> instead of root keys</p>
+            <p><span class="check">✔</span> Encrypt <strong>S3 buckets</strong> &amp; EBS volumes</p>
+            <p><span class="check">✔</span> Monitor with <strong>AWS GuardDuty</strong>/Azure Sentinel</p>
+        </div>
+
+        <h2>IoT Security Best Practices</h2>
+
+        <div class="practice-box">
+            <p><span class="check">✔</span> Change <strong>default credentials</strong></p>
+            <p><span class="check">✔</span> Disable <strong>unused services</strong> (Telnet)</p>
+            <p><span class="check">✔</span> Implement <strong>firmware signing</strong></p>
+            <p><span class="check">✔</span> Use <strong>VLANs</strong> to segment IoT devices</p>
+        </div>
+
+        <hr/>
+
+        <!-- ============================================================ -->
+        <!-- HANDS-ON LABS -->
+        <!-- ============================================================ -->
+        <h2>Hands-On Labs</h2>
+
+        <h3>Lab 1: Hacking an AWS S3 Bucket</h3>
+
+        <p><strong>1. Find open buckets:</strong></p>
+        <div class="code-block">
+            <div class="code-header">
+                <span>☁️ AWS CLI</span>
+                <span>Find Buckets</span>
+            </div>
+            <pre><code><span class="cmd">aws s3 ls s3:// --no-sign-request</span></code></pre>
+        </div>
+
+        <p><strong>2. Download files:</strong></p>
+        <div class="code-block">
+            <div class="code-header">
+                <span>☁️ AWS CLI</span>
+                <span>Download</span>
+            </div>
+            <pre><code><span class="cmd">aws s3 cp s3://bucket-name/file.txt</span></code></pre>
+        </div>
+
+        <h3>Lab 2: Exploiting IoT Camera</h3>
+
+        <p><strong>1. Find target:</strong></p>
+        <div class="code-block">
+            <div class="code-header">
+                <span>🔍 Shodan</span>
+                <span>Find Camera</span>
+            </div>
+            <pre><code><span class="cmd">shodan search</span> <span class="string">"webcam"</span></code></pre>
+        </div>
+
+        <ol start="2">
+            <li>Login with <strong>admin:admin</strong></li>
+            <li>Access live feed via <code>/video.mjpg</code></li>
+        </ol>
+
+        <hr/>
+
+        <!-- ============================================================ -->
+        <!-- CONCLUSION -->
+        <!-- ============================================================ -->
+        <h2>Conclusion</h2>
+
+        <ul>
+            <li>Cloud security requires <strong>configuration auditing</strong></li>
+            <li>IoT hacking combines <strong>network + hardware attacks</strong></li>
+            <li>Defense = <strong>encryption + segmentation + monitoring</strong></li>
+        </ul>
+
+        <h3>🔹 Next Steps</h3>
+
+        <ul>
+            <li><a href="https://www.cybersume.xyz/2025/03/post-exploitation-reporting.html" target="_blank"><strong>Module 11: Post-Exploitation &amp; Reporting</strong></a></li>
+            <li>Try <strong>AWS CTF challenges</strong> (CloudGoat)</li>
+            <li>Explore <strong>IoT villages</strong> at DEFCON</li>
+            <li>Learn <strong>hardware reverse engineering</strong></li>
+        </ul>
+
+        <div class="tip-box">
+            <p>🚀 Want a <strong>step-by-step walkthrough for hacking a smart bulb</strong>? Let me know!</p>
+        </div>
+
+        <hr/>
+
+        <!-- ===== SHARE SECTION ===== -->
+        <div class="share-section">
+            <p>📤 Share this cloud & IoT security guide with your network</p>
+            <div class="share-buttons">
+                <a href="#" onclick="window.open('https://twitter.com/intent/tweet?text=Cloud%20Security%20%26%20IoT%20Hacking%20Guide%20-%20Complete%20Guide%20to%20Cloud%20%26%20IoT%20Security!%20%23CloudSecurity%20%23IoTHacking%20%23CyberSecurity','_blank');return false;">
+                    🐦 Twitter
+                </a>
+                <a href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(window.location.href),'_blank');return false;">
+                    📘 Facebook
+                </a>
+                <a href="#" onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url='+encodeURIComponent(window.location.href),'_blank');return false;">
+                    💼 LinkedIn
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
